@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conductor Group List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="bootstrap-flatly.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,700&amp;subset=cyrillic" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="PageHeader">
+            <div class="PageHeader_Brand">
+                <h1><a href="#">CONDUCTOR</a></h1>
+            </div>
+            <nav class="PageHeader_Mainmenu">
+                <ul class="PageHeader_Mainmenu_List">
+                    <li><a href="#">Datacenters</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Hosts</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Action Log</a></li>
+                </ul>
+            </nav>
+            <div class="PageHeader_Account">
+                <div class="PageHeader_Account_Avatar">
+                    <img class="PageHeader_Account_Avatar_Pic" src="avatar.png" alt="avatar"/>
+                </div>
+            </div>
+        </header>
+        <div class="PageContent">
+            <main class="PageMain PageMain--Collapsed">
+                <div class="ContentHeader">
+                    <h2 class="ContentHeader_Title">Group List</h2>
+                    <div class="ContentHeader_Buttons">
+                        <button class="btn btn-success btn-sm text-uppercase">
+                            <i class="fa fa-plus"></i> Create
+                        </button>
+                    </div>
+                    <div class="ContentHeader_SearchField">
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="FILTER" aria-label="Filter" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <table class="ModelList">
+                    <thead>
+                        <tr>
+                            <th class="ModelList_Select"><i class="fa fa-folder-o"></i></th>
+                            <th>Name</th>
+                            <th>Project</th>
+                            <th>Tags</th>
+                            <th>Custom Fields</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_export</a></td>
+                            <td>corba</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA frontends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_back</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA backends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_db</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">corba</span>                              
+                                <span class="Tag">database</span>           
+                                <span class="Tag">database-master</span>           
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_disk:</span>
+                                    <span class="CustomField_Value">auto</span>
+                                </span>
+                            </td>
+                            <td>CORBA databases</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_export</a></td>
+                            <td>corba</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA frontends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_back</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA backends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_db</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA databases</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_export</a></td>
+                            <td>corba</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA frontends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_back</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA backends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_db</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA databases</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_export</a></td>
+                            <td>corba</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA frontends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_back</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA backends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_db</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA databases</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_export</a></td>
+                            <td>corba</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA frontends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_back</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA backends</td>
+                        </tr>
+                        <tr>
+                            <td class="ModelList_Select"><i class="fa fa-folder-o"></i></td>
+                            <td><a href="#">corba_db</a></td>
+                            <td>corba</td>
+                            <td>
+                                <span class="Tag">
+                                    corba
+                                </span>                              
+                            </td>
+                            <td>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_os:</span>
+                                    <span class="CustomField_Value">ubuntu</span>
+                                </span>
+                                <span class="CustomField">
+                                    <span class="CustomField_Key">eine_net:</span>
+                                    <span class="CustomField_Value">dhcp</span>
+                                </span>
+                            </td>
+                            <td>CORBA databases</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="Pagination">
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a class="page-link" href="#">&larr;</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">&rarr;</a></li>
+                    </ul>
+                </div>
+            </main> 
+            <aside class="SelectPanel">
+                <h2 class="ContentHeader_Title">Mass actions</h2>
+                <ul class="ListSelected">
+                    <li class="ListSelected_Item">corba_back</li>
+                    <li class="ListSelected_Item">corba_export</li>
+                    <li class="ListSelected_Item">corba_db</li>
+                </ul>
+                <div class="Form">
+                    <div class="Form_Field">
+                        <label class="Form_FieldLabel">Move groups to project</label>
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Project Name" />
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary">Move</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Form_Field">
+                        <label class="Form_FieldLabel">Delete Groups</label>
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </aside>           
+        </div>
+        <footer class="PageFooter">
+            Conductor v6.8.0 / flask 0.12 / mongodb 2.6.12
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conductor Datacenter Tree</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="bootstrap-flatly.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,700&amp;subset=cyrillic" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="PageHeader">
+            <div class="PageHeader_Brand">
+                <h1><a href="#">CONDUCTOR</a></h1>
+            </div>
+            <nav class="PageHeader_Mainmenu">
+                <ul class="PageHeader_Mainmenu_List">
+                    <li><a href="#">Datacenters</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Hosts</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Action Log</a></li>
+                </ul>
+            </nav>
+            <div class="PageHeader_Account">
+                <div class="PageHeader_Account_Avatar">
+                    <img class="PageHeader_Account_Avatar_Pic" src="avatar.png" alt="avatar"/>
+                </div>
+            </div>
+        </header>
+        <div class="PageContent">
+            <main class="PageMain">
+                <div class="ContentHeader">
+                    <h2 class="ContentHeader_Title">Datacenter Tree</h2>
+                    <div class="ContentHeader_Buttons">
+                        <button class="btn btn-success btn-sm text-uppercase">
+                            <i class="fa fa-plus"></i> Create
+                        </button>
+                    </div>
+                </div>
+                <div class="PageContentContainer">
+                    <ul class="DatacenterTree">
+                        <li class="DatacenterTree_Item DatacenterTree_Item--root">root</li>
+                        <li class="DatacenterTree_Item" style="margin-left: 18px;"><a href="#">bo</a></li>
+                        <li class="DatacenterTree_Item" style="margin-left: 18px;"><a href="#">dc1</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 36px;"><a href="#">dc1.1</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 54px;"><a href="#">dc1.1.1</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 54px;"><a href="#">dc1.1.2</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 36px;"><a href="#">dc1.2</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 54px;"><a href="#">dc1.2.1</a></li>
+                        <li class="DatacenterTree_Item DatacenterTree_Item--Sub" style="margin-left: 54px;"><a href="#">dc1.2.2</a></li>
+                        <li class="DatacenterTree_Item" style="margin-left: 18px;"><a href="#">ms</a></li>
+                    </ul>
+                </div>
+            </main> 
+        </div>
+        <footer class="PageFooter">
+            Conductor v6.8.0 / flask 0.12 / mongodb 2.6.12
+        </footer>
+    </body>
+</html>
