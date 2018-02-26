@@ -1,28 +1,25 @@
-.App {
-  text-align: center;
+body {
+  font-family: Roboto, Ubuntu, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1,h2,h3,h4,h5 {
+  font-weight: normal;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.btn,h1,h2,h3,h4,h5 {
+  text-transform: uppercase;
+  font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
-.App-title {
-  font-size: 1.5em;
+a {
+  text-decoration: none !important;
+  transition: 0.2s ease color;
+  color: #1e5dc4;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+a:hover {
+  color: red;
 }
