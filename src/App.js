@@ -1,11 +1,14 @@
+import './extraStyles/normalize.css';
+import './extraStyles/bootstrap-flatly.css';
+import './extraStyles/font-awesome.css';
+import './extraStyles/fonts.css';
+
 import React, { Component } from 'react';
 import {Route, Link, Switch, Redirect} from 'react-router-dom';
 import PageHeader from './components/header/PageHeader';
 import PageFooter from './components/footer/PageFooter';
 import GroupList from './components/grouplist/GroupList';
 import GroupEdit from './components/groupedit/GroupEdit';
-import './css/normalize.css';
-import './css/bootstrap-flatly.css';
 
 class App extends Component {
   render() {
