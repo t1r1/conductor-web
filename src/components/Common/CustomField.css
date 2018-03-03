@@ -10,3 +10,8 @@
 .CF_Key::after {
     content: ":";
 }
+
+.ModelList .CF:not(:last-child) .CF_Value::after {
+    content: ", ";
+}
+  
