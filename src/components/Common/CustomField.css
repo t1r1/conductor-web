@@ -1,0 +1,12 @@
+
+.CF {
+    line-height: 1.1em;
+}
+
+.CF_Key {
+    font-weight: bold;
+}
+
+.CF_Key::after {
+    content: ":";
+}

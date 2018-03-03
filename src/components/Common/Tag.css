@@ -1,0 +1,22 @@
+.Tag {
+    font-size: 80%;
+    padding: 1px 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccd;
+    background: #eef;
+    cursor: pointer;
+    border-radius: 2px;
+    color: black;
+    display: inline-block; 
+    margin-right: 4px;   
+}
+
+.Tag.Tag--Derived {
+    background-color: #efe;
+    border-color: #cdc;
+}
+
+.ModelList .Tag {
+    position: relative;
+    top: -1px;
+}
