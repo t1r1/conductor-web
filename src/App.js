@@ -12,6 +12,8 @@ import GroupEdit from './components/Groups/GroupEdit';
 import GroupView from './components/Groups/GroupView';
 import HostList from './components/Hosts/HostList';
 import HostListItem from './components/Hosts/HostListItem';
+import ProjectList from './components/Projects/ProjectList';
+import ProjectListItem from './components/Projects/ProjectListItem';
 
 class App extends Component {
   render() {
@@ -24,6 +26,8 @@ class App extends Component {
           <Route path="/groups/:name" component={GroupView}/>
           <Route exact path="/hosts" component={HostList}/>
           <Route path="/hosts:name" component={HostListItem}/>
+          <Route exact path="/projects" component={ProjectList}/>
+          <Route path="/projects:name" component={ProjectListItem}/>
           <Redirect from="*" to="/groups"/>
         </Switch>
         <PageFooter/>

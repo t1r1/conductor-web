@@ -29,6 +29,20 @@ const Api = {
             let url = `/api/v1/hosts/?_fields=${fields.join(',')}&_page=${page}&_filter=${filter}`
             return axios.get(url)
         }
+    },
+    Projects: {
+        List: (page, filter) => {
+            let fields = [
+                '_id',
+                'name',
+                'owner',
+                'email',
+                'root_email',
+                'description',
+            ]
+            let url = `/api/v1/projects/?_fields=${fields.join(',')}&_page=${page}&_filter=${filter}`
+            return axios.get(url)
+        }
     }
 }
 
