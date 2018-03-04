@@ -9,7 +9,14 @@ const FilterField = (props) => {
                         <i className="fa fa-search"></i>
                     </span>
                 </div>
-                <input type="text" className="form-control" placeholder="FILTER" aria-label="Filter" aria-describedby="basic-addon1"/>
+                <input 
+                    type="text" 
+                    className="form-control" 
+                    placeholder="FILTER" 
+                    aria-label="Filter" 
+                    aria-describedby="basic-addon1"
+                    value={props.value}
+                    onChange={props.onChange}/>
             </div>
         </div>
     )

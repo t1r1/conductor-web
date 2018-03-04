@@ -10,6 +10,8 @@ import PageFooter from './components/Page/PageFooter';
 import GroupList from './components/Groups/GroupList';
 import GroupEdit from './components/Groups/GroupEdit';
 import GroupView from './components/Groups/GroupView';
+import HostList from './components/Hosts/HostList';
+import HostListItem from './components/Hosts/HostListItem';
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
           <Route exact path="/groups" component={GroupList}/>
           <Route path="/groups/:id/edit" component={GroupEdit}/>
           <Route path="/groups/:name" component={GroupView}/>
+          <Route exact path="/hosts" component={HostList}/>
+          <Route path="/hosts:name" component={HostListItem}/>
           <Redirect from="*" to="/groups"/>
         </Switch>
         <PageFooter/>

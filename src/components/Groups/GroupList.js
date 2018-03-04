@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
 import FilterField from '../Common/FilterField';
 import GroupListItem from './GroupListItem';
-import axios from 'axios';
+import Api from '../../api/Api';
 
 class GroupList extends Component {
     state = {
-        groups: []
+        groups: [],
+        page: 1,
+        filter: ''
     }
 
     componentDidMount () {
-        axios.get('/api/v1/groups/?_fields=_id,name,project_name,custom_fields,tags,description')
+        let { page, filter} = this.state
+        this.loadData(page, filter)
+    }
+
+    loadData (page, filter) {
+        Api.Groups.List(page, filter)
         .then(response => {
             this.setState({groups: response.data.data})
         })
     }
+
+    filterChange = (e) => {
+        let { value } = e.target
+        this.setState({filter: value})
+        this.loadData(this.state.page, value)
+    }
+
     render () {
-        let { groups } = this.state
+        let { groups, filter } = this.state
         return (
             <div className="PageContent">
                 <main className="PageMain">
@@ -26,7 +40,7 @@ class GroupList extends Component {
                                 <i className="fa fa-plus"></i> Create
                             </button>
                         </div>
-                        <FilterField/>
+                        <FilterField onChange={this.filterChange} value={filter}/>
                     </div>
                     <table className="ModelList">
                         <thead>

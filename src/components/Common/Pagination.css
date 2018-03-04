@@ -1,0 +1,29 @@
+
+.Pagination {
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-link, .page-item.disabled .page-link {
+    background: white;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+.page-item.disabled .page-link {
+    color: #999;
+}
+
+.page-link:hover {
+    background: #999;
+}
+
+.page-item:not(:first-child) .page-link {
+    border-left: none;
+}
+
+.page-item.active .page-link {
+    background: #18BC9C;
+    color: white;
+}
