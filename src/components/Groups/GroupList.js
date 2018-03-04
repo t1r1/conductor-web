@@ -15,7 +15,6 @@ class GroupList extends Component {
         })
     }
     render () {
-        console.log(this.state.groups)
         let { groups } = this.state
         return (
             <div className="PageContent">

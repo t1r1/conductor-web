@@ -124,3 +124,64 @@ table.ModelList > tbody > tr:hover > td { background-color: #f3f3fc; }
   width: 32px;
   text-align: center !important;
 }
+
+
+.Project::before, .Group::before, .Host::before {
+  font-family: FontAwesome;
+  padding-right: 0.2em;
+  position: relative;
+  top: 0.04em;
+}
+
+.Project::before {
+  content: "\f0f2";
+  top: 0;
+}
+
+.Group::before {
+  content: "\f114";
+}
+
+.Host::before {
+  content: "\f109";
+}
+
+.Card h3 {
+  text-transform: none;
+}
+
+.CardHeader {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+
+.Form_FieldLabel, .Card_FieldLabel {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  display: block;
+  font-size: 80%;
+}
+
+.Form_Field, .Card_Field {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.Form_Field--CFE .row {
+  margin-bottom: 8px;
+}
+
+.Form_Field .btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Card_TagList {
+  display: flex;
+  align-items: center;
+}
+
+.Card_TagList .Tag {
+  margin-right: 4px;
+}

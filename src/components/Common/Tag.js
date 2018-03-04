@@ -1,9 +1,15 @@
 import React from 'react';
 import './Tag.css';
+import classnames from 'classnames';
+
 
 const Tag = (props) => {
+    let classes = classnames({ 
+        "Tag": true,
+        "Tag--Derived": props.derived
+    })
     return (
-        <span className="Tag">{props.name}</span>
+        <div className={classes}>{props.name}</div>
     )
 }
 

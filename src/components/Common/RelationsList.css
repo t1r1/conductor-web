@@ -1,0 +1,9 @@
+.RelationsList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.RelationsList_Item {
+    line-height: 1.1rem;
+}

@@ -1,6 +1,7 @@
-import React, { Component} from 'react';
+import React from 'react';
 import Tag from '../Common/Tag';
-import CustomField from '../Common/CustomField'
+import CustomField from '../Common/CustomField';
+import { Link } from 'react-router-dom';
 
 const GroupListItem = (props) => {
     let { group } = props
@@ -10,7 +11,7 @@ const GroupListItem = (props) => {
                 <i className="fa fa-folder-o"></i>
             </td>
             <td>
-                <a href="#">{group.name}</a>
+                <Link to={`/groups/${group.name}`}>{group.name}</Link>
             </td>
             <td>{group.project_name}</td>
             <td>

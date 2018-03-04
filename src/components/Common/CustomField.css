@@ -1,4 +1,3 @@
-
 .CF {
     line-height: 1.1em;
 }
@@ -15,3 +14,6 @@
     content: ", ";
 }
   
+.ModelList .CF {
+    display: inline;
+}

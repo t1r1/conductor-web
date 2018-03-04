@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './CustomField.css';
 
 const CustomField = (props) => {
     return (
-        <span className="CF">
+        <div className="CF">
             <span className="CF_Key">{props.cfKey}</span> {' '}
             <span className="CF_Value">{props.cfValue}</span>
-        </span> 
+        </div> 
     )
 }
 
