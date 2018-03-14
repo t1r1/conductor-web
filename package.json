@@ -18,5 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://conductor.home.viert.fm"
+  "proxy": "https://c.inventoree.ru"
 }

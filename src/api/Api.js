@@ -43,6 +43,11 @@ const Api = {
             let url = `/api/v1/projects/?_fields=${fields.join(',')}&_page=${page}&_filter=${filter}`
             return axios.get(url)
         }
+    },
+    Account: {
+        Me: () => {
+            return axios.get('/api/v1/account/me')
+        }
     }
 }
 
